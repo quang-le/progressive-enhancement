@@ -1,0 +1,17 @@
+p {
+    font-style:serif;
+    font-size: large;
+    line-height: 150%;
+}
+
+body {
+    color:rgb(42,55,64);
+}
+
+a:visited {
+    color: magenta;
+}
+
+a:hover {
+    color: cyan;
+}
