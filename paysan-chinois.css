@@ -2,10 +2,17 @@ p {
     font-style:serif;
     font-size: large;
     line-height: 150%;
+    
 }
 
 body {
     color:rgb(42,55,64);
+    width: 90%;
+    margin: auto;
+    background: url(https://www.nasa.gov/sites/default/files/images/270259main_Sol_090_sunrise_full.jpg) no-repeat;
+    background-size:cover;
+    background-position: right bottom;
+    
 }
 
 a:visited {
@@ -14,4 +21,17 @@ a:visited {
 
 a:hover {
     color: cyan;
+}
+q {
+    display: block;
+    width: 50%;
+    font-size: 160%;
+    background-color: lightgrey;
+    border-left: 3px brown solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin: auto;  
+
 }
