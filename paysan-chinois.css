@@ -1,5 +1,5 @@
 p {
-    font-style:serif;
+    font-family:serif;
     font-size: large;
     line-height: 150%;
     
@@ -9,9 +9,12 @@ body {
     color:rgb(42,55,64);
     width: 90%;
     margin: auto;
-    background: url(https://www.nasa.gov/sites/default/files/images/270259main_Sol_090_sunrise_full.jpg) no-repeat;
-    background-size:cover;
+    background-image: url(https://hfradioclub.com.au/system/files/styles/juicebox_medium/private/gallery/Allen%20Lawrence/11/05/2017%20-%205%3A48pm/wilson_dawn.jpg?itok=xwSQqk9e);
+    background-size: cover;
     background-position: right bottom;
+    background-repeat:  no-repeat;
+
+    
     
 }
 
@@ -27,11 +30,75 @@ q {
     width: 50%;
     font-size: 160%;
     background-color: lightgrey;
-    border-left: 3px brown solid;
     padding-left: 30px;
-    padding-right: 30px;
     margin-top: 80px;
     margin-bottom: 80px;
     margin: auto;  
+    font-style: italic;
 
+}
+
+.villageois {
+    border-left: 3px brown solid;
+}
+
+.fermier {
+    border-left: 3px greenyellow solid;
+}
+
+header::first-line{
+    background-color: yellow;
+}
+
+.bien {
+    font-variant: small-caps;
+    color: green;
+}
+
+.mal {
+    font-variant: small-caps;
+    color: red;
+}
+
+.odd{
+    background-color: grey;
+}
+
+.even{
+    background-color: white;
+}
+
+
+.thumbup {
+    
+    background-repeat: no-repeat;
+    background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/bien.png);
+    background-position: 30% 50%;
+    background-size: initial;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.thumbdown {
+    background-repeat: no-repeat;
+    background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/mal.png);
+    background-position: 30% 50%;
+    background-size: initial;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.cat {
+    background-repeat: no-repeat;
+    background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/chat.png);
+    background-position: 30% 50%;
+    background-size: initial;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.bold{
+    font-weight: bold;
 }
