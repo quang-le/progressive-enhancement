@@ -68,35 +68,24 @@ header::first-line{
     background-color: white;
 }
 
-
-.thumbup {
-    
+li {
     background-repeat: no-repeat;
-    background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/bien.png);
     background-position: 30% 50%;
     background-size: initial;
     padding-top: 15px;
     padding-bottom: 15px;
+    border: 1px solid;
+}
+.thumbup {   
+    background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/bien.png);  
 }
 
 .thumbdown {
-    background-repeat: no-repeat;
     background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/mal.png);
-    background-position: 30% 50%;
-    background-size: initial;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
 }
 
 .cat {
-    background-repeat: no-repeat;
     background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/chat.png);
-    background-position: 30% 50%;
-    background-size: initial;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
 }
 
 .bold{
