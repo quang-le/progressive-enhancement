@@ -1,0 +1,93 @@
+p {
+    font-family:serif;
+    font-size: large;
+    line-height: 150%;
+    
+}
+
+body {
+    color:rgb(42,55,64);
+    width: 90%;
+    margin: auto;
+    background-image: url(https://hfradioclub.com.au/system/files/styles/juicebox_medium/private/gallery/Allen%20Lawrence/11/05/2017%20-%205%3A48pm/wilson_dawn.jpg?itok=xwSQqk9e);
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat:  no-repeat;
+
+    
+    
+}
+
+a:visited {
+    color: magenta;
+}
+
+a:hover {
+    color: cyan;
+}
+q {
+    display: block;
+    width: 50%;
+    font-size: 160%;
+    background-color: lightgrey;
+    padding-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin: auto;  
+    font-style: italic;
+
+}
+
+.villageois {
+    border-left: 3px brown solid;
+}
+
+.fermier {
+    border-left: 3px greenyellow solid;
+}
+
+header::first-line{
+    background-color: yellow;
+}
+
+.bien {
+    font-variant: small-caps;
+    color: green;
+}
+
+.mal {
+    font-variant: small-caps;
+    color: red;
+}
+
+.odd{
+    background-color: grey;
+}
+
+.even{
+    background-color: white;
+}
+
+.thumbup {   
+    background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/bien.png);  
+}
+
+.thumbdown {
+    background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/mal.png);
+}
+
+.cat {
+    background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/chat.png);
+}
+
+.bold{
+    font-weight: bold;
+}
+li{
+    line-height: 50px;
+    border: 1px solid;
+    display: inline-block;
+}
+span {
+      border: 1px solid blue;     
+}
