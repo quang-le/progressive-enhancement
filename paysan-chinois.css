@@ -1,21 +1,17 @@
 p {
-    font-family:serif;
     font-size: large;
-    line-height: 150%;
-    
+    line-height: 150%;    
 }
 
 body {
     color:rgb(42,55,64);
     width: 90%;
     margin: auto;
-    background-image: url(https://hfradioclub.com.au/system/files/styles/juicebox_medium/private/gallery/Allen%20Lawrence/11/05/2017%20-%205%3A48pm/wilson_dawn.jpg?itok=xwSQqk9e);
+    background-image: url(https://www.destructoid.com//ul/446857-Main-Day.jpg);
     background-size: cover;
     background-position: right bottom;
     background-repeat:  no-repeat;
-
-    
-    
+    font-family: 'Open Sans', sans-serif;  
 }
 
 a:visited {
@@ -35,7 +31,6 @@ q {
     margin-bottom: 80px;
     margin: auto;  
     font-style: italic;
-
 }
 
 .villageois {
@@ -44,6 +39,10 @@ q {
 
 .fermier {
     border-left: 3px greenyellow solid;
+}
+.imgside{
+    margin:0;
+    width: 20%;
 }
 
 header::first-line{
@@ -67,14 +66,16 @@ header::first-line{
 .even{
     background-color: white;
 }
+h1,h2{
+    font-family: 'Skranji', cursive;
+}
 
 li {
     background-repeat: no-repeat;
-    background-position: 30% 50%;
+    background-position: 40% 50%;
     background-size: initial;
     padding-top: 15px;
     padding-bottom: 15px;
-    border: 1px solid;
 }
 .thumbup {   
     background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/bien.png);  
@@ -88,6 +89,24 @@ li {
     background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/chat.png);
 }
 
+
 .bold{
     font-weight: bold;
+}
+
+.right{
+    float:right;
+    margin-left:25px;
+}
+.left{
+    float:left;
+    margin-right: 25px;
+}
+h2 {
+    display:inline-block;
+    text-align: center;
+}
+
+hr{
+    border:none;
 }
