@@ -1,0 +1,278 @@
+/*Setting up fonts and backgrounds*/
+@font-face {
+  font-family:HyliaSerif;
+  src:url(HyliaSerifBeta-Regular.otf);
+}
+@font-face{
+  font-family:HylianSymbols;
+  src:url(HylianSymbols.ttf);
+}
+body{
+  color:white;
+  font-family: Arial, sans-serif;
+}
+.mainTitle{
+  font-family:HyliaSerif;
+  color:rgb(83,111,80);
+}
+span{
+  font-family: HylianSymbols;
+}
+.features>li{
+  font-size:larger;
+}
+.mainTitleFont{
+  font-weight:lighter;
+  font-size: xx-large;
+}
+.footer>li{
+  font-size: small;
+}
+.black {
+  background-color:black;
+}
+.darkgreen {
+  background-color: rgb(83,111,80);
+}
+.lightgreen{
+  background-color: rgb(146,197,130);
+}
+.yellowish{
+  background-color: rgb(253,255,224);
+}
+.sienna{
+  color:Sienna;
+}
+/*Removing some default css + doing some positioning for the navBars*/
+h2{
+  margin-top:0;
+  margin-bottom:0;
+}
+ul{
+  margin-top:0;
+  margin-bottom:0;
+}
+section{
+  padding-top:0.75em;
+  padding-bottom:0.75em;
+}
+li{
+  list-style-type: none;
+  position:relative;
+  margin-right: 10px;
+}
+img {
+  display: block;
+  width:50%;
+  margin:auto;
+}
+a {
+  text-decoration: none;
+  color:white;
+  position:relative;
+  top:25%;
+}
+/*below line to prevent in-text links from moving*/
+p>a{
+  position:static;
+}
+/*top bar and footer*/
+.navBar{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  margin:0;
+  padding:0;
+  padding-top:0.75em;
+  padding-bottom:0.75em;
+}
+.navLogo{
+  width:10%;
+  margin-right:0.5em;
+  flex:1;
+}
+.navImg{
+  width: 3em;
+}
+.navLogin{
+  text-align:right;
+  flex:6;
+}
+.navLink{
+  margin-left:0.5em;
+  margin-right:0.5em;
+  flex:1
+}
+.footer{
+  padding-top:0.1em;
+  padding-bottom:0.5em;
+}
+.footer>li:first-child{
+  text-align:center;
+}/*top bar and footer-end*/
+.main{
+  background: url(linkthumbup.gif) no-repeat left;
+  padding:2.2em;
+  margin-left: 5px;
+  background-size:inherit;
+  background-position:left center;
+}
+.main>a{
+  margin:auto;
+}
+.mainTitle{
+  text-align:center;
+}
+/*all buttons*/
+.button{
+  display:block;
+  border-radius: 1em;
+  padding-top:0.2em;
+  padding-bottom: 0.2em;
+  padding-left:0.3em;
+  padding-right:0.3em;
+  text-align:center;
+  width:15%;
+}
+.button.darkgreen{
+  border:1px solid rgb(253,255,224);
+  color:rgb(253,255,224);
+}
+.button.yellowish{
+  border:1px solid rgb(83,111,80);
+  color:rgb(83,111,80);
+}
+/*positioning bottom buttons*/
+.userOptions{
+  display:flex;
+  flex-direction:row;
+  align-content:center;
+  justify-content:center
+}
+.userOptions>a{
+  margin-left: 5px;
+  margin-right:5px;
+  padding-top:10px;
+  padding-bottom:10px;
+}/*buttons-end*/
+.slogan{
+  text-align:center;
+  padding-top:0.75em;
+  padding-bottom:0.75em;
+}
+.slogan.yellowish{
+  color:rgb(83,111,80);
+}
+.slogan.darkgreen{
+  color:rgb(253,255,224);
+}
+.features{
+  display:grid;
+  grid-template-areas: "effectiveTitle versatileTitle"
+                       "effectiveBody versatileBody"
+                       "silentTitle fighterTitle"
+                       "silentBody fighterBody";
+  grid-template-columns: 47% 47%;
+  grid-template-rows: 10% 38% 10% 38%;
+  grid-column-gap: 25px;
+  grid-row-gap: 5px;
+  content-justify:center;
+}
+li.effective{
+  grid-area:effectiveTitle;
+}
+p.effective{
+  grid-area:effectiveBody;
+}
+li.silent{
+  grid-area:silentTitle;
+}
+p.silent{
+  grid-area:silentBody;
+}
+li.versatile{
+  grid-area:versatileTitle;
+}
+p.versatile{
+  grid-area:versatileBody;
+}
+li.moreThanaFighter{
+  grid-area:fighterTitle;
+}
+p.moreThanaFighter{
+  grid-area:fighterBody;
+}
+.features>p{
+  text-align:justify;
+}
+.partners{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+}
+.partners>a{
+  width: 30%;
+}
+.chatButton{
+  position:fixed;
+  top:93vh;
+  left:93vw;
+  height:3em;
+  width:3em;
+  border: 1px solid rgba(255,192,29,0.7);
+  border-radius: 100%;
+  background-color:rgba(255,192,29,0.7);
+}
+.chatButton>img{
+  width:100%;
+}
+
+@media(max-width:910px){
+  .main{
+    background-image:none;
+  }
+}
+@media(max-width:700px){
+  .chatButton{
+    top:90vh;
+    left:90vw;
+  }
+}
+@media(max-width:600px){
+  .button{
+    width:90px;
+  }
+  .features{
+    grid-template-areas: "effectiveTitle "
+                         "effectiveBody"
+                         "versatileTitle"
+                         "versatileBody"
+                         "silentTitle"
+                         "silentBody"
+                         "fighterTitle"
+                         "fighterBody";
+    grid-template-columns: 75%;
+    grid-template-rows: 10% 38% 10% 38%;
+    grid-row-gap: 5px;
+  }
+  .features>p{
+    padding-bottom: 10px;
+  }
+  footer>.navBar{
+    flex-direction:column;
+  }
+  .footer>.navLogin{
+    flex:1;
+  }
+  .footer>li:first-child{
+    text-align:left;
+  }
+}
+@media(max-width:500px){
+  .chatButton{
+    top:88vh;
+    left:85vw;
+  }
+}

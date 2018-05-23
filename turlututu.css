@@ -1,0 +1,246 @@
+@font-face{
+    font-family: HyliaSerif;
+    src:url(/home/nb24/progressive-enhancement/HyliaSerifBeta-Regular.otf);
+}
+@font-face{
+    Font-family: HylianSymbols;
+    src: url(/home/nb24/progressive-enhancement/HylianSymbols.ttf);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+li {
+    padding: 0;
+    list-style-type: none;
+}
+a {     
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+.HeaderContainer{
+    display: flex;
+    flex-direction: row;
+    flex: center;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    text-justify: left; 
+    background-color: rgb(73,75,75);   
+}
+.TopContainer{
+    display:grid;
+    grid-template-areas: "img title"
+                         "img button";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 75%;
+    align-content: center;
+    justify-content:center;
+}
+#LinkGif{
+    grid-area: img;
+    display:block; 
+    height: 100%;   
+}
+#LinkGif>img{
+    display:block;
+    height:100%;
+}
+
+#DBtitle{
+    grid-area:title;
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-left:9.25%;
+    font-weight:lighter;
+    
+}
+.TopContainer>a.Findbutton{
+    grid-area:button;
+    display:block;
+    text-align: center;
+    width: 15%;
+}
+.Findbutton{
+    border:1px solid white;
+    background-color: rgb(14,81,53);
+    border-radius: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+.homeLogo{
+   height: 100%;
+   display: block;
+   margin:auto;
+}
+.loginlogo{
+    float:right;
+    margin-right: 10%;
+    margin-left: 40%;
+}
+.TopContainer{
+    background-color: rgb(13,146,99)
+}
+.TopContainer>a{
+    margin-left:26.50%;
+    margin-right:0; 
+}
+.Slogan{
+    background-color:rgb(212,206,70);
+    font-size: xx-large;
+    text-align: center;
+    padding: 0.6em;
+}
+.Slogan>p{
+    margin-top: 0;
+    margin-bottom:0;
+}
+.Features{
+    background-color: rgb(74,186,145);
+    display: grid;
+    margin:0;
+    padding-top: 1em;
+    padding-bottom:1em;
+    grid-template-areas: "efficient1 intrusive1"
+                         "efficient2 intrusive2"
+                         "versatile1 fighter1"
+                         "versatile2 fighter2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 40% 10% 40%;
+}
+.Features>li{
+    padding: 0.5em;
+}
+.Features>p{
+    padding: 0.5em;
+}
+
+li.efficient{
+    grid-area: efficient1;
+    margin:auto;
+    width: 80%;
+}
+p.efficient{
+    grid-area: efficient2;
+    margin:auto;
+    width: 80%;
+}
+li.intrusive{
+    grid-area: intrusive1;
+    margin:auto;
+    width: 80%;
+}
+p.intrusive{
+    grid-area: intrusive2;
+    margin:auto;
+    width: 80%;
+}
+li.versatile{    
+    grid-area: versatile1;
+    margin:auto;
+    width: 80%;
+}
+p.versatile{    
+    grid-area: versatile2;
+    margin:auto;
+    width: 80%;
+}
+li.fighter  {  
+    grid-area: fighter1;
+    margin:auto;
+    width: 80%;
+}
+p.fighter  {  
+    grid-area: fighter2;
+    margin:auto;
+    width: 80%;
+}
+.Navi{
+    display:block;
+    height: 5%%;
+    width: 5%;
+    outline: 1px solid red;
+    position: fixed;
+    left: 95%;
+    top: 95%;
+    margin:0;
+}
+.Navi>img{
+    display:block;
+    margin:auto;
+    width: 100%;
+}
+.Slogan2{
+    background-color: rgb(14,81,53);
+    color: rgb(212,206,70);
+    font-size: xx-large;
+    text-align: center;
+    padding: 0.2em;
+}
+.Partners{
+    background-color: rgb(212,206,70);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+.partnerlogo{
+    height: 10em;
+}
+.loginlogo>img{
+    display:block;
+    height: 50%;
+}
+nav>a {
+    width: 7%;
+    height: 50%;
+    padding-top: 0.2em;
+}
+h1{
+    font-family: HyliaSerif;
+}
+span{
+    font-family:HylianSymbols;
+}
+
+.BottomButtonsBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(74,186,145);
+    padding: 1em;
+    margin-bottom:0px;
+}
+.BottomButtons{
+    display:block;
+    text-align: center;
+    width: 15%;
+    border:1px solid rgb(14,81,53);
+    background-color: rgb(212,206,70);
+    border-radius: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin:0;
+    font-weight: bold;
+}
+.BottomButtonsBox>a{
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align:center;
+    width: 12%;   
+}
+footer{
+    background-color: black;
+    margin-top: 0px;
+}
+.FooterContainer{
+    margin:0;
+    display:flex;
+    flex-direction: row;
+}
+
+.FooterContainer>li{
+    margin-left: 1em;
+}

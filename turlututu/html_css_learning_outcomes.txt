@@ -1,0 +1,10 @@
+html/css, learning outcomes.
+
+1/ remaining questions
+* how to easily size images?
+* how to space evenly text boxes that only contain one word/expression (ex: home - Terms and Conditions - About)
+* what are the advatages and good practices with  size units: px, em, vx etc.
+* what are the good practices in organizing your css code: group by section (article, section etc), by feature (buttons) or by type of change (fonts, background etc)?
+* is it possible to create a clickable image in css?
+* how to automatically adjust an img size(responsive) without using a grid?
+
